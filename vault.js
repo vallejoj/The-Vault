@@ -1,16 +1,21 @@
-'use strict';
+
 module.exports = function() {
-  var daKey;
-  var daValue;
-    function setValue(key, value){
-    daKey=key
-    daValue=value
+var mKey;
+var mValue;
+function setValue(key, value){
+   mKey=key;
+   mValue= value
 }
-    function getValue(key){
-if (daKeys) {
-  return daValue
+
+function getValue (key) {
+  if (mKey) {
+    return mValue
+  }else {
+    return null
+  }
+
 }
-    }
-    return{key:key,
-    value:value}
-};
+return{setValue:setValue,
+getValue:getValue}
+
+}
