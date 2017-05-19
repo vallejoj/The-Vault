@@ -1,15 +1,14 @@
 
 module.exports = function() {
-var mKey;
-var mValue;
+var treasure={}
 function setValue(key, value){
-   mKey=key;
-   mValue= value
+  treasure.key=key
+  treasure.value=value
 }
 
 function getValue (key) {
-  if (mKey) {
-    return mValue
+  if (treasure.key) {
+    return treasure.value
   }else {
     return null
   }
